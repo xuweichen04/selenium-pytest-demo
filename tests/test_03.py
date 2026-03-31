@@ -48,11 +48,12 @@ class TestTaobao:
         search_box = driver.find_element(By.CSS_SELECTOR, "#q")
         assert search_box.is_displayed(), "搜索框未显示"
         print("搜索框找到了")
+
     def test_input(self, driver):
-        #driver.switch_to.default_content()
         print("\n[测试 5] 检查输入...")
         driver.find_element(By.CSS_SELECTOR, "#q").send_keys("男装")
-        driver.find_element(By.CSS_SELECTOR, "#J_TSearchForm > div.search-button > button").click()
-        print("✓搜索成功")
-
+        print("✓输入成功")
+        driver.execute_script("window.scrollBy(0, 2000);")
+        sleep(2)
+        print("✓页面下滑")
 
