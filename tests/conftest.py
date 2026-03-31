@@ -19,11 +19,18 @@ def driver(request):
     同一目录下的所有测试文件都可以直接使用，无需 import
     """
     browser = request.config.getoption("--browser")
+    #无头模式
+    headless = request.config.getoption("--headless")
+
     if browser == "chrome":
 
      # 配置 Chrome 选项
      service=ChromeService(executable_path=r"C:\python\chromedriver.exe")
      options = ChromeOptions()
+     if headless:
+         options.add_argument("--headless")
+         options.add_argument("--no-sandbox")  # 无头模式必需
+         options.add_argument("--disable-dev-shm-usage")  # 防止内存不足
      options.add_argument("--start-maximized")  # 窗口最大化
      driver = webdriver.Chrome(service=service,options=options)
     elif browser == "edge":
@@ -31,13 +38,17 @@ def driver(request):
      # 配置 Edge 选项
      service=EdgeService(executable_path=r"C:\python\msedgedriver.exe")
      options = EdgeOptions()
+     if headless:
+         options.add_argument("--headless")
+         options.add_argument("--no-sandbox")
+         options.add_argument("--disable-dev-shm-usage")
      options.add_argument("--start-maximized")  # 窗口最大化
      driver = webdriver.Edge(service=service,options=options)
     else:
         raise ValueError(f"不支持的浏览器：{browser}")
 
     # 创建浏览器实例
-    print("\n=== 启动浏览器 ===")
+    print("\n=== 启动浏览器（无头模式）" if headless else "\n=== 启动浏览器")
     driver.implicitly_wait(10)# 设置隐式等待 10 秒
     request.node.driver = driver
 
@@ -54,6 +65,12 @@ def pytest_addoption(parser):
         action="store",
         default="chrome",
         help="浏览器类型：chrome / edge"
+    )
+    parser.addoption(
+        "--headless",
+        action="store_true",
+        default=False,
+        help="是否以无头模式运行（不显示浏览器界面）"
     )
 
 # 失败截图钩子
