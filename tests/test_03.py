@@ -53,7 +53,6 @@ class TestTaobao:
         print("\n[测试 5] 检查输入...")
         driver.find_element(By.CSS_SELECTOR, "#q").send_keys("男装")
         driver.find_element(By.CSS_SELECTOR, "#J_TSearchForm > div.search-button > button").click()
-        sleep(10)
         print("✓搜索成功")
 
 
