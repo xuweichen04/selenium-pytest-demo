@@ -32,4 +32,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest tests/ --headless   # 无头模式，适合CI
+          pytest tests/ --browser chrome --headless
