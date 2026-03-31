@@ -1,0 +1,1 @@
+{"2a56e43e55ac7916ef84b29f91e512f8":{"statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"316f380e66e2abf3","status":"failed","statusDetails":"AssertionError: 这是一个故意的失败，用于测试截图功能\nassert False","time":{"start":1774954977953,"stop":1774954978903,"duration":950}}]}}

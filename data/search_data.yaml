@@ -1,0 +1,6 @@
+- keyword: "selenium"
+  expected_title: "selenium"
+- keyword: "pytest"
+  expected_title: "pytest"
+- keyword: "python"
+  expected_title: "python"

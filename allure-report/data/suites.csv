@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"用于测试截图功能的失败测试","950","test_debug_screenshot","tests","2026-03-31","failed","2026-03-31","","debug_screenshot","",""
