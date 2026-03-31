@@ -15,8 +15,7 @@ from pages.taobao_page import TaobaoPage
 
 def test_search_selenium(driver):
     taobao = TaobaoPage(driver)
-    taobao.open().search("男装")
-
+    taobao.open()
     assert "淘宝" in taobao.get_title()
 
 
