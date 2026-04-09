@@ -3,7 +3,7 @@ from pathlib import Path
 import allure
 import pytest
 # 获取当前文件（test_baidu.py）所在目录的父目录（即 '测试脚本' 目录）
-current_dir = Path(__file__).parent   # tests 目录
+current_dir = Path(__file__).parent.parent   # tests 目录
 parent_dir = current_dir.parent       # 测试脚本 目录
 sys.path.insert(0, str(parent_dir))   # 把 '测试脚本' 加入搜索路径
 # 现在可以尝试导入

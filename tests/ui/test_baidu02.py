@@ -5,7 +5,7 @@ import allure
 import yaml
 import sys
 from pathlib import Path
-current_dir = Path(__file__).parent   # tests 目录
+current_dir = Path(__file__).parent.parent   # tests 目录
 
 parent_dir = current_dir.parent       # 测试脚本 目录
 
