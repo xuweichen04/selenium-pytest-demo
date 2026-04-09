@@ -16,13 +16,13 @@ from pages.baidu_page import BaiduPage
 """
 def load_test_data():
     # 获取当前文件所在目录的父目录（即项目根目录）下的 data/search_data.json
-    data_file = Path(__file__).parent.parent / "data" / "search_data.json"
+    data_file = Path(__file__).parent.parent.parent / "data" / "search_data.json"
     with open(data_file, "r", encoding="utf-8") as f:
         return json.load(f)   # 直接返回 Python 列表
         """
 
 def load_test_data():
-    data_file = Path(__file__).parent.parent / "data" / "search_data.yaml"
+    data_file = Path(__file__).parent.parent.parent / "data" / "search_data.yaml"
     with open(data_file, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)  # 直接返回 Python 列表
 
