@@ -21,7 +21,7 @@ def test_search_selenium(driver,keyword):
      assert keyword in baidu.get_title()
 
     ## 记住这个万能命令
-# Remove-Item .\allure-results\* -Recurse -Force; pytest tests/test_baidu02.py --alluredir=./allure-results -v
+# Remove-Item .\allure-results\* -Recurse -Force; pytest tests/ --alluredir=./allure-results -v
 
      """
      allure generate ./allure-results -o ./allure-report --clean

@@ -1,21 +1,40 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2171","test_search_selenium","tests","2026-04-02","passed","2026-04-02","","test_taobao","",""
-"","10764","test_baidu","tests","2026-04-02","passed","2026-04-02","","test_01","",""
-"","4632","test_taobao","tests","2026-04-02","passed","2026-04-02","","test_01","",""
-"测试在百度搜索 selenium","1568","test_search_selenium[python]","tests","2026-04-02","passed","2026-04-02","","test_baidu","",""
-"打开百度首页","512","test_open_baidu","tests","2026-04-02","passed","2026-04-02","TestBaidu","test_02","",""
-"","1442","test_search[test_data0]","tests","2026-04-02","passed","2026-04-02","","test_baidu02","",""
-"检查搜索框是否存在","1600","test_check_search","tests","2026-04-02","passed","2026-04-02","TestTaobao","test_03","",""
+"
+测试登录成功
+","285","test_login_success","tests.api","2026-04-13","passed","2026-04-13","","test_login","",""
+"
+测试添加课程接口
+接口地址: POST /api/clues/course
+","168","test_add_course","tests.api","2026-04-13","passed","2026-04-13","","test_addcourse","",""
+"
+测试文件上传接口
+接口地址: POST /api/common/upload
+","115","test_upload_file","tests.api","2026-04-13","passed","2026-04-13","","test_uploadfile","",""
+"
+测试获取验证码图片接口
+接口地址: GET http://kdtx-test.itheima.net/api/captchaImage
+","143","test_get_captcha_image","tests.api","2026-04-13","passed","2026-04-13","","test_captchaImage","",""
+"","1279","test_search[test_data1]","tests.ui","2026-04-13","passed","2026-04-13","","test_baidu02","",""
+"测试在百度搜索 selenium","1279","test_search_selenium[pytest]","tests.ui","2026-04-13","passed","2026-04-13","","test_baidu","",""
 "
 测试页面刷新
-","2510","test_refresh_page","tests","2026-04-02","passed","2026-04-02","TestTaobao","test_02","",""
-"打开淘宝首页","1761","test_open_taobao","tests","2026-04-02","passed","2026-04-02","TestTaobao","test_03","",""
-"","2063","test_input","tests","2026-04-02","passed","2026-04-02","TestTaobao","test_03","",""
-"搜索 Selenium","6453","test_search_selenium","tests","2026-04-02","passed","2026-04-02","TestBaidu","test_02","",""
+","2317","test_refresh_page","tests.ui","2026-04-13","passed","2026-04-13","TestTaobao","test_02","",""
+"打开百度首页","421","test_open_baidu","tests.ui","2026-04-13","passed","2026-04-13","TestBaidu","test_02","",""
+"测试在百度搜索 selenium","1328","test_search_selenium[python]","tests.ui","2026-04-13","passed","2026-04-13","","test_baidu","",""
+"","1825","test_search[test_data2]","tests.ui","2026-04-13","failed","2026-04-13","","test_baidu02","",""
 "
 测试页面前进后退
-","6849","test_page_navigation","tests","2026-04-02","passed","2026-04-02","TestBaidu","test_02","",""
-"","1330","test_search[test_data1]","tests","2026-04-02","passed","2026-04-02","","test_baidu02","",""
-"","1964","test_search[test_data2]","tests","2026-04-02","passed","2026-04-02","","test_baidu02","",""
-"测试在百度搜索 selenium","1625","test_search_selenium[pytest]","tests","2026-04-02","passed","2026-04-02","","test_baidu","",""
-"测试在百度搜索 selenium","1548","test_search_selenium[selenium]","tests","2026-04-02","passed","2026-04-02","","test_baidu","",""
+","6628","test_page_navigation","tests.ui","2026-04-13","passed","2026-04-13","TestBaidu","test_02","",""
+"检查搜索框是否存在","1650","test_check_search","tests.ui","2026-04-13","passed","2026-04-13","TestTaobao","test_03","",""
+"","2201","test_taobao","tests.ui","2026-04-13","passed","2026-04-13","","test_01","",""
+"","10989","test_baidu","tests.ui","2026-04-13","passed","2026-04-13","","test_01","",""
+"","2065","test_input","tests.ui","2026-04-13","passed","2026-04-13","TestTaobao","test_03","",""
+"搜索 Selenium","6416","test_search_selenium","tests.ui","2026-04-13","passed","2026-04-13","TestBaidu","test_02","",""
+"
+测试查询课程列表接口
+接口地址: GET /api/clues/course/list
+","217","test_select_course_list","tests.api","2026-04-13","passed","2026-04-13","","test_selectcourselist","",""
+"","2092","test_search_selenium","tests.ui","2026-04-13","passed","2026-04-13","","test_taobao","",""
+"","1422","test_search[test_data0]","tests.ui","2026-04-13","passed","2026-04-13","","test_baidu02","",""
+"测试在百度搜索 selenium","1396","test_search_selenium[selenium]","tests.ui","2026-04-13","passed","2026-04-13","","test_baidu","",""
+"打开淘宝首页","2420","test_open_taobao","tests.ui","2026-04-13","passed","2026-04-13","TestTaobao","test_03","",""
